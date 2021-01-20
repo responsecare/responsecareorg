@@ -46,3 +46,8 @@ jobs:
       - name: Deploy to AWS S3 bucket
         run:
           aws s3 sync ./public/ s3://responsecare --delete
+
+      # Invalidate Cloudfront cache
+      - name: Deploy to AWS S3 bucket
+        run:
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.TEST_AWS_DISTRIBUTION_ID }} --paths "/*"
