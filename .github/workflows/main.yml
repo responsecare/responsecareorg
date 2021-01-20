@@ -46,4 +46,4 @@ jobs:
       - name: Deploy to AWS S3 bucket
         run:
           ls -lrt
-          # aws s3 sync ./Public/* s3://responsecare
+          # aws s3 sync ./public/* s3://responsecare
