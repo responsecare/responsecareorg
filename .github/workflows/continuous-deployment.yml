@@ -41,7 +41,7 @@ jobs:
       - name: Deploy to Staging
         if: github.ref == 'refs/heads/deveop'
         run:
-          aws s3 sync public/* s3://responsecare-staging/public
+          aws s3 sync public/* s3://responsecare-staging/public --delete
       
       # Configure production AWS credentials
       - name: Configure production AWS credentials
@@ -51,9 +51,9 @@ jobs:
           aws-access-key-id: ${{ secrets.PRD_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.PRD_AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.PRD_AWS_REGION }}
-          
+
       # Deploy to production
       - name: Deploy to Production
         if: github.ref == 'refs/heads/main'
         run:
-          aws s3 sync public/* s3://responsecare/public
+          aws s3 sync public/* s3://responsecare/public -- delete
