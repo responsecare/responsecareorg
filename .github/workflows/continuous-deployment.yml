@@ -43,7 +43,7 @@ jobs:
       - name: Deploy to Staging
         if: github.ref == 'refs/heads/develop'
         run:
-          aws s3 sync public/* s3://responsecare-staging/public --delete
+          aws s3 sync ./public/* s3://responsecare-staging/public --delete
       
       # Configure production AWS credentials
       - name: Configure production AWS credentials
@@ -58,4 +58,4 @@ jobs:
       - name: Deploy to Production
         if: github.ref == 'refs/heads/main'
         run:
-          aws s3 sync public/* s3://responsecare/public -- delete
+          aws s3 sync ./public/* s3://responsecare/public -- delete
