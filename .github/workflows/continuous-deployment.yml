@@ -31,7 +31,7 @@ jobs:
         run: hugo --minify
 
       # Configure staging AWS credentials
-      - name: Deploy to Staging
+      - name: Configure staging AWS credentials
         if: github.ref == 'refs/heads/develop'
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -41,7 +41,7 @@ jobs:
 
       # Deploy to staging
       - name: Deploy to Staging
-        if: github.ref == 'refs/heads/deveop'
+        if: github.ref == 'refs/heads/develop'
         run:
           aws s3 sync public/* s3://responsecare-staging/public --delete
       
