@@ -1,0 +1,61 @@
+name: Continuous Deployment
+
+# Controls when the action will run. 
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  deploy:
+    name: Deploy
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          submodules: true # Fetch Hugo Themes (true or recursive)
+
+      # Setup Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      # Build workspace with Hugo
+      - name: Build
+        run: hugo --minify
+
+      # Configure staging AWS credentials
+      - name: Configure staging AWS credentials
+        if: github.ref == 'refs/heads/develop'
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.STG_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.STG_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.STG_AWS_REGION }}
+
+      # Deploy to staging
+      - name: Deploy to Staging
+        if: github.ref == 'refs/heads/develop'
+        run:
+          aws s3 sync ./public/ s3://responsecare-staging/public --delete
+      
+      # Configure production AWS credentials
+      - name: Configure production AWS credentials
+        if: github.ref == 'refs/heads/main'
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.PRD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.PRD_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.PRD_AWS_REGION }}
+
+      # Deploy to production
+      - name: Deploy to Production
+        if: github.ref == 'refs/heads/main'
+        run:
+          aws s3 sync ./public/ s3://responsecare/public -- delete

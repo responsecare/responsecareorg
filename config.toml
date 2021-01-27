@@ -1,3 +1,21 @@
-baseURL = "http://example.org/"
+# Page settings
+baseurl = "responsecare.org"
+title = "Response Care"
 languageCode = "en-us"
-title = "My New Hugo Site"
+theme = "hugo-elate-theme"
+
+[params]
+  
+  custom_css = ["css/style.css"]
+
+  favicon = "img/favicon.ico"
+
+  # Meta
+  author = ""
+  description = ""
+  email = ""
+
+  # Hero section
+  [params.hero]
+    title = "Coming Soon."
+    subtitle = 'Response Care - Making child poverty history through Art & Design'
