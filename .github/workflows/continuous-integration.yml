@@ -33,5 +33,5 @@ jobs:
           # The directory to scan
           directory: "./public"
           # The arguments to pass to HTMLProofer
-          # arguments: --allow-missing-href
+          arguments: --allow-missing-href
           
