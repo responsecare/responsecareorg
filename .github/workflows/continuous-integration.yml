@@ -25,3 +25,13 @@ jobs:
       # Build workspace with Hugo
       - name: Build
         run: hugo --minify
+
+      # Execute HTMLProffer against generated files
+      - name: Check HTML (HTMLProofer)
+        uses: chabad360/htmlproofer@master
+        with:
+          # The directory to scan
+          directory: "./public"
+          # The arguments to pass to HTMLProofer
+          arguments: --allow_hash_href
+          
