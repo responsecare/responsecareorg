@@ -1,5 +1,5 @@
 # Page settings
-baseurl = "responsecare.org"
+baseurl = "https://responsecare.org"
 title = "Response Care"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
@@ -14,6 +14,10 @@ theme = "hugo-elate-theme"
   author = ""
   description = ""
   email = ""
+
+  # Navigation
+  [params.navigation]
+    brand = "Response Care"
 
   # Hero section
   [params.hero]
