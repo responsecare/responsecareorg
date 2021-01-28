@@ -15,11 +15,6 @@ theme = "hugo-elate-theme"
   description = ""
   email = ""
 
-  # Navigation
-  [params.navigation]
-    brand = "Response Care"
-    contact = "Contact"
-
   # Hero section
   [params.hero]
     title = "Coming Soon."
