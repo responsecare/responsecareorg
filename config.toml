@@ -6,7 +6,7 @@ theme = "hugo-elate-theme"
 
 [params]
   
-  custom_css = ["css/custom.css"]
+  custom_css = ["css/style.css"]
 
   favicon = "img/favicon.ico"
 
