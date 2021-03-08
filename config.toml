@@ -17,5 +17,16 @@ theme = "hugo-elate-theme"
 
   # Hero section
   [params.hero]
-    title = "Coming Soon."
-    subtitle = 'Response Care - Making child poverty history through Art & Design'
+    title = "Response Care"
+    subtitle = 'Making child poverty history through Art & Design'
+
+  # Contact section
+  [params.contact]
+    enable = true
+    form = true
+    title = "Get in touch"
+    description = "Join our mailing list to get regular updates on Response Care."
+
+  # Footer section
+  [params.footer]
+    enable = false
