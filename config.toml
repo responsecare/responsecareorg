@@ -20,6 +20,21 @@ theme = "hugo-elate-theme"
     title = "Response Care"
     subtitle = 'Making child poverty history through Art & Design'
 
+  # About section
+  [params.about]
+    enable = true
+    title = "About"
+
+  # Work section
+  [params.work]
+    enable = true
+    title = "Our Projects"
+
+    [[params.work.row]]
+      img = "work_1.jpg"
+      alt = "Image2"
+      title = "First Child Centre"
+
   # Contact section
   [params.contact]
     enable = true
