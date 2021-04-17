@@ -1,0 +1,124 @@
+#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-vision, #fh5co-mission, #fh5co-projects {
+    padding: 4em 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    #fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-vision, #fh5co-mission, #fh5co-projects {
+      padding: 2em 0;
+    }
+  }
+
+  #fh5co-home, #fh5co-vision, #fh5co-projects {
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+    color: #ffc500;
+    overflow: hidden;
+  }
+  
+  #fh5co-home .gradient, #fh5co-vision .gradient, #fh5co-projects .gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: .5;
+    -webkit-backface-visibility: hidden;
+    background-color: #000000;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #000000), color-stop(1, #000000));
+    /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(top left, #000000 0%, #000000 100%);
+    /* IE10+ */
+    background-image: repeating-linear-gradient(to bottom right, #000000 0%, #000000 100%);
+    background-image: -ms-repeating-linear-gradient(top left, #000000 0%, #000000 100%);
+  }
+
+  #fh5co-home .text-wrap, #fh5co-vision .text-wrap, #fh5co-projects .text-wrap {
+    display: table;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+  }
+  #fh5co-home .text-inner, #fh5co-vision .text-inner, #fh5co-projects .text-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  #fh5co-home .text-inner a, #fh5co-vision .text-inner a, #fh5co-projects .text-inner a{
+    color: #ffc500;
+  }
+  #fh5co-home .text-inner a:hover, #fh5co-home .text-inner a:active, #fh5co-home .text-inner a:focus, #fh5co-vision .text-inner a:hover, #fh5co-vision .text-inner a:active, #fh5co-vision .text-inner a:focus, #fh5co-projects .text-inner a:hover, #fh5co-projects .text-inner a:active, #fh5co-projects .text-inner a:focus  {
+    color: #ffc500;
+    border-bottom: 1px dashed #ffc500;
+  }
+  #fh5co-home .text-inner h1, #fh5co-vision .text-inner h2, #fh5co-projects .text-inner h2 {
+    color: #ffc500;
+  }
+  #fh5co-home .text-inner h2 {
+    color: rgba(255, 197, 0, 0.8);
+  }
+
+  #fh5co-header .navbar-brand {
+    color: #ffc500;
+  }
+  #fh5co-header.navbar-fixed-top .navbar-brand {
+    color: #ffc500;
+  }
+  #fh5co-header .navbar-brand {
+    color: #ffc500 !important;
+  }
+
+  ::-webkit-selection {
+    color: rgba(255, 197, 0, 0.8);
+    background: #f9f6f0;
+  }
+  
+  ::-moz-selection {
+    color: rgba(255, 197, 0, 0.8);
+    background: #f9f6f0;
+  }
+  
+  ::selection {
+    color: rgba(255, 197, 0, 0.8);
+    background: #f9f6f0;
+  }
+  
+  #fh5co-header #navbar li a {
+    color: rgba(255, 197, 0, 0.7);
+  }
+
+  #fh5co-header #navbar li a:hover {
+    color: #ffc500;
+  }
+
+  #fh5co-header #navbar li a span:before {
+    background-color: rgba(255, 197, 0, 0.8);
+  }
+
+  #fh5co-header.navbar-fixed-top #navbar li a:hover {
+    color: #ffc500;
+  }
+  #fh5co-header.navbar-fixed-top #navbar li.active a {
+    color: #ffc500;
+  }
+  #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+    background-color: #ffc500;
+  }
+
+  .section-heading h2:after {
+    background: #ffc500;
+  }
+
+  .btn.btn-primary {
+    background: #ffc500;
+  }
+
+  a, a:hover {
+  color: #ffc500;
+  }
