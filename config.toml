@@ -1,47 +1,56 @@
 # Page settings
 baseurl = "/"
-title = "Response Care"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
+title = "Response Care"
 
 [params]
-  
-  custom_css = ["css/style.css"]
 
-  favicon = "img/favicon.ico"
+custom_css = ["css/custom1.css"]
 
-  # Meta
-  author = ""
-  description = ""
-  email = ""
+favicon = "img/favicon.ico"
 
-  # Hero section
-  [params.hero]
-    title = "Response Care"
-    subtitle = 'Making child poverty history through Art & Design'
+# Meta
+author = ""
+description = ""
+email = ""
 
-  # About section
-  [params.about]
-    enable = true
-    title = "About"
+# Navigation
+[params.navigation]
+brand = "Response Care"
+about = "About Us"
+mission = "Our Mission"
+vision = "Our Vision"
+projects = "Projects"
+contact = "Contact"
 
-  # Work section
-  [params.work]
-    enable = true
-    title = "Our Projects"
+# Hero section
+[params.hero]
+subtitle = 'Making child poverty history through Art & Design'
+title = "Response Care"
 
-    [[params.work.row]]
-      img = "work_1.jpg"
-      alt = "Image2"
-      title = "First Child Centre"
+# About section
+[params.about]
+enable = true
+title = "About"
 
-  # Contact section
-  [params.contact]
-    enable = true
-    form = true
-    title = "Get in touch"
-    description = "Join our mailing list to get regular updates on Response Care."
+# Work section
+[params.work]
+enable = true
+title = "Our Projects"
 
-  # Footer section
-  [params.footer]
-    enable = false
+[[params.work.row]]
+alt = "Image2"
+img = "work_1.jpg"
+title = "First Child Centre"
+
+# Contact section
+[params.contact]
+description = "Join our mailing list to get regular updates on Response Care."
+enable = true
+form = true
+title = "Get in touch"
+
+# Footer section
+[params.footer]
+enable = false
