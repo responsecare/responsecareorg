@@ -1,9 +1,9 @@
-#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-vision, #fh5co-mission, #fh5co-projects {
+#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-vision, #fh5co-mission, #fh5co-projects, #fh5co-projects-detail {
     padding: 4em 0;
   }
 
   @media screen and (max-width: 768px) {
-    #fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-vision, #fh5co-mission, #fh5co-projects {
+    #fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-vision, #fh5co-mission, #fh5co-projects, #fh5co-projects-detail {
       padding: 2em 0;
     }
   }
@@ -74,21 +74,6 @@
     color: #ffc500 !important;
   }
 
-  ::-webkit-selection {
-    color: rgba(255, 197, 0, 0.8);
-    background: #f9f6f0;
-  }
-  
-  ::-moz-selection {
-    color: rgba(255, 197, 0, 0.8);
-    background: #f9f6f0;
-  }
-  
-  ::selection {
-    color: rgba(255, 197, 0, 0.8);
-    background: #f9f6f0;
-  }
-  
   #fh5co-header #navbar li a {
     color: rgba(255, 197, 0, 0.7);
   }
@@ -121,4 +106,8 @@
 
   a, a:hover {
   color: #ffc500;
+  }
+
+  #fh5co-projects .section-heading h3, #fh5co-vision .section-heading h3 {
+    color: #ffffff;
   }

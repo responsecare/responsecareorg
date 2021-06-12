@@ -442,6 +442,36 @@
         }
     };
 
+    var projectsDetailAnimate = function () {
+        var projectsDetail = $('#fh5co-projects-detail');
+        if (projectsDetail.length > 0) {
+
+            projectsDetail.waypoint(function (direction) {
+
+                if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+
+                    setTimeout(function () {
+                        projectsDetail.find('.to-animate').each(function (k) {
+                            var el = $(this);
+
+                            setTimeout(function () {
+                                el.addClass('fadeInUp animated');
+                            }, k * 200, 'easeInOutExpo');
+
+                        });
+                    }, 200);
+
+
+
+                    $(this.element).addClass('animated');
+
+                }
+            }, { offset: '80%' });
+
+        }
+    };
+
     var countersAnimate = function () {
         var counters = $('#fh5co-counters');
         if (counters.length > 0) {
@@ -557,6 +587,7 @@
         visionAnimate();
         missionAnimate();
         projectsAnimate();
+        projectsDetailAnimate();
         countersAnimate();
         contactAnimate();
 
