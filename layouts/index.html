@@ -22,6 +22,8 @@
 
     {{ partial "projects.html" .}}
 
+    {{ partial "projects_detail.html" .}}
+
     {{ if .Site.Params.contact.enable }}
     {{ partial "contact.html" .}}
     {{ end }}
