@@ -111,3 +111,8 @@
   #fh5co-projects .section-heading h3, #fh5co-vision .section-heading h3 {
     color: #ffffff;
   }
+
+  .fh5co-nav-toggle i, .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after, .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after  {
+    color: #ffc500;
+    background: #ffc500;
+  }
