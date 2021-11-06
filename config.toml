@@ -1,21 +1,53 @@
 # Page settings
 baseurl = "/"
-title = "Response Care"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
+title = "Response Care"
 
 [params]
-  
-  custom_css = ["css/style.css"]
 
-  favicon = "img/favicon.ico"
+custom_css = ["css/custom1.css"]
 
-  # Meta
-  author = ""
-  description = ""
-  email = ""
+favicon = "img/favicon.ico"
 
-  # Hero section
-  [params.hero]
-    title = "Coming Soon."
-    subtitle = 'Response Care - Making child poverty history through Art & Design'
+# Meta
+author = ""
+description = ""
+email = ""
+
+# Navigation
+[params.navigation]
+about = "About Us"
+brand = "Response Care"
+contact = "Contact"
+mission = "Our Mission"
+projects = "Projects"
+vision = "Our Vision"
+
+# Hero section
+[params.hero]
+subtitle = 'Making child poverty history through Art & Design'
+title = "Response Care"
+
+# About section
+[params.about]
+enable = true
+title = "About"
+
+# Contact section
+[params.contact]
+description = "Join our mailing list to get regular updates on Response Care."
+enable = true
+form = true
+title = "Get in touch"
+
+# Footer section
+[params.footer]
+copyright = '&copy; responsecare.org'
+enable = true
+links = [
+  ["icon-instagram", "https://www.instagram.com/response.care/"],
+  ["icon-facebook", "https://www.facebook.com/responsecareNGO"],
+  ["icon-twitter", "https://twitter.com/response_care"],
+  ["icon-linkedin", "https://www.linkedin.com/company/response-care-org/"],
+]
