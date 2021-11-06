@@ -111,3 +111,7 @@
   #fh5co-projects .section-heading h3, #fh5co-vision .section-heading h3 {
     color: #ffffff;
   }
+
+  .social.social-circle a {
+    background: #ffc500;
+  }

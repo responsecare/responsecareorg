@@ -17,12 +17,12 @@ email = ""
 
 # Navigation
 [params.navigation]
-brand = "Response Care"
 about = "About Us"
-mission = "Our Mission"
-vision = "Our Vision"
-projects = "Projects"
+brand = "Response Care"
 contact = "Contact"
+mission = "Our Mission"
+projects = "Projects"
+vision = "Our Vision"
 
 # Hero section
 [params.hero]
@@ -34,16 +34,6 @@ title = "Response Care"
 enable = true
 title = "About"
 
-# Work section
-[params.work]
-enable = true
-title = "Our Projects"
-
-[[params.work.row]]
-alt = "Image2"
-img = "work_1.jpg"
-title = "First Child Centre"
-
 # Contact section
 [params.contact]
 description = "Join our mailing list to get regular updates on Response Care."
@@ -53,4 +43,11 @@ title = "Get in touch"
 
 # Footer section
 [params.footer]
-enable = false
+copyright = '&copy; responsecare.org'
+enable = true
+links = [
+  ["icon-instagram", "https://www.instagram.com/response.care/"],
+  ["icon-facebook", "https://www.facebook.com/responsecareNGO"],
+  ["icon-twitter", "https://twitter.com/response_care"],
+  ["icon-linkedin", "https://www.linkedin.com/company/response-care-org/"],
+]
